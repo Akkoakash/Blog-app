@@ -28,11 +28,74 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.route-container{
+  margin:20px;
+}
+
+.blogImg{
+  width: 100%;
+  min-height: 50%;
+}
+.welcome{
+  font-size: 130%;
+}
+.blog-poster{
+  width: 340px;
+  height: 500px;
+  object-fit: cover;
+}
+.blog-container{
+ /*background: orange;*/
+  width: 340px;
+  height:min-content;
+}
+.blog-specs{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+}
+.blog-name{
+  font-size: 24px;
+  margin: 0;
+}
+.blog-summary{
+ margin-top: 0;
+}
+
+.blog-list{
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.counter-container{
+  display:flex;
+  gap: 10px;
+}
+.like-dislike{
+  font-size: 20px;
+}
+.add-place-form{
+  display:flex;
+  flex-direction:column;
+  gap:10px;
+  margin:16px;
+}
+.board{
+ display: flex;
+ flex-wrap: wrap;
+ width: 492px;  
+}
+
+.not-found{
+  text-align:center;
+  font-size:54px;
+  margin:0;
+}
+.blog-detail-container{
+  max-width: 900px;
+  padding: 24px;
+}
+.route-container{
+  margin:20px;
 }
