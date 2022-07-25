@@ -99,3 +99,44 @@
 .route-container{
   margin:20px;
 }
+.write {
+  padding-top: 50px;
+}
+.Form {
+  position: relative;
+}
+.writeForm {
+  align-items: center;
+  padding: 20px;
+}
+.writeFormGroup {
+  align-items: center;
+}
+.writeInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+.GiveInput {
+  font-size: 30px;
+  border: none;
+  padding: 20px;
+  width: 70vw;
+}
+.Submit {
+  position: absolute;
+  font-size: 18px;
+  color: white;
+  background-color: teal;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  align-items: center;
+}
+.writeInput {
+  width: 70vw;
+  height: 60vh;
+  font-family: inherit;
+  font-size: 20px;
+}

@@ -8,12 +8,13 @@ import { BlogList } from "./BlogList";
 import { BlogDetails } from "./BlogDetails";
 import { AddPlace } from "./AddPlace";
 import { EditPlace } from "./EditPlace";
-//import { Login } from "./Login";
 import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { useState } from "react";
 import Paper from '@mui/material/Paper';
 import Brightness4Icon from '@mui/icons-material/Brightness4';
 import Brightness7Icon from '@mui/icons-material/Brightness7';
+import { Login } from './Login';
+import Write from './Write';
 
 export default function App() {
  
@@ -33,6 +34,8 @@ export default function App() {
         <Button color="inherit" onClick={()=>history.push("/")}>Home</Button>
         <Button color="inherit" onClick={()=>history.push("/blog")}>Place</Button>
         <Button color="inherit" onClick={()=>history.push("/blog/add")}>Add Place</Button>
+        <Button color="inherit" onClick={()=>history.push("/write")}>Write</Button>
+        <Button color="inherit" onClick={()=>history.push("/login")}>Login</Button>
         <Button color="inherit" style={{marginLeft:"auto"}}
         startIcon={mode === 'dark' ? <Brightness7Icon />: <Brightness4Icon />}
         onClick={()=>setMode(mode === "light" ? "dark" : "light")}>{mode === "light" ? "dark" : "light"} mode</Button>
@@ -51,6 +54,12 @@ export default function App() {
     </Route>
       <Route path="/blog"> 
   <BlogList />
+  </Route>
+  <Route path="/write"> 
+  <Write />
+  </Route>
+      <Route path="/login"> 
+  <Login />
       </Route>
     <Route path="/">
       <Welcome/>
