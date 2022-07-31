@@ -6,12 +6,24 @@ import ExpandLessIcon from '@mui/icons-material/ExpandLess';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Counter } from './Counter';
 import { useHistory } from "react-router-dom";
+import Marquee from "react-fast-marquee";
+import"./App.css";
 
 export function Blog({ name, poster, summary, deleteButton, id, editButton }) {
  
   const [show, setShow] = useState(true);
   const history = useHistory();
+  
   return (
+    <div className="Container">
+    <Marquee
+                        gradient={false} 
+                        speed={80} 
+                        pauseOnHover={true}
+                        pauseOnClick={true} 
+                        delay={0}
+                        play={true} 
+                        direction="left">
     <Card className='blog-container'>
       <img src={poster} alt={name} className="blog-poster" />
      <CardContent>
@@ -32,5 +44,7 @@ export function Blog({ name, poster, summary, deleteButton, id, editButton }) {
        <Counter/>{deleteButton} {editButton}
       </CardActions>
     </Card>
+    </Marquee>
+    </div>
   );
 }
