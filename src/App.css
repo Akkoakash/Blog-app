@@ -172,7 +172,7 @@ cursor: pointer;
   align-items: center;
   justify-content: center; 
   width: 100%;
-  margin-top: 3.5rem;
+  margin-top: .5rem;
   
 }
 .blog-container{
@@ -180,9 +180,9 @@ cursor: pointer;
   align-items: center;
     justify-content: center; 
     width: 50%;
-    margin-top: 3;
+    margin-top: 5;
     padding: 0 2rem;
-    height: 50%;
+    height: 65%;
 }
 
 
