@@ -63,7 +63,7 @@
 }
 
 .blog-list{
-  display: flex;
+  
   gap: 16px;
   flex-wrap: wrap;
   justify-content: space-around;
@@ -179,7 +179,7 @@ cursor: pointer;
   
 }
 .blog-container{
-  display: flex;
+ 
   align-items: center;
     justify-content: center; 
     width: 50%;
