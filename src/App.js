@@ -54,9 +54,7 @@ export default function App() {
     <Route path="/blog/:id"> 
     <BlogDetails /> 
     </Route>
-      <Route path="/blog"> 
- 
-  </Route>
+      
   <Route path="/write"> 
   <Write />
   </Route>
@@ -64,7 +62,6 @@ export default function App() {
   <Login />
       </Route>
     <Route path="/">
-     
       <BlogList />
       </Route>
     </Switch>

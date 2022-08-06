@@ -13,7 +13,9 @@ export function Counter() {
         value={value}
         onChange={(event, newValue) => {
           setValue(newValue);
+          <div className="rating">
           <Rating name="no-value" value={null} />
+          </div>
         }}
       />
     </div>
